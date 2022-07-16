@@ -2,7 +2,6 @@ import os
 import pickle
 import sklearn
 import numpy as np
-import keras
 from flask import Flask, request, jsonify, render_template, redirect
 model, training_accuracy, testing_accuracy = pickle.load(open("SVM.pkl","rb"))
 
